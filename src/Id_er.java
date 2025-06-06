@@ -3,8 +3,8 @@ import java.util.Objects;
 public class Id_er implements Comparable<Id_er> {
     protected long id;
 
-    public  Id_er(long id){
-        this.id=id;
+    public Id_er(long id) {
+        this.id = id;
     }
 
     public long getId() {

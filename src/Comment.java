@@ -5,7 +5,7 @@ public class Comment extends Id_er {
     private User author;
     private LocalDateTime timestamp;
 
-    public Comment(long id,String text, User author, LocalDateTime timestamp) {
+    public Comment(long id, String text, User author, LocalDateTime timestamp) {
         super(id);
         this.text = text;
         this.author = author;

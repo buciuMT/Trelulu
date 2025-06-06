@@ -44,7 +44,7 @@ public class CLI {
                     TaskStatus status = TaskStatus.valueOf(scanner.nextLine());
                     System.out.print("Deadline (YYYY-MM-DDTHH:MM): ");
                     java.time.LocalDateTime deadline = java.time.LocalDateTime.parse(scanner.nextLine());
-                    Task task = new Task(id, title, description,deadline, status);
+                    Task task = new Task(id, title, description, deadline, status);
                     service.addTask(task);
                     System.out.println("Task creat.");
                 }

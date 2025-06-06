@@ -2,6 +2,7 @@ import java.util.List;
 import java.util.Objects;
 
 public class User extends Id_er {
+
     private String role;
     private List<Task> assignedTasks;
 
@@ -9,6 +10,10 @@ public class User extends Id_er {
         super(id);
         this.role = role;
         this.assignedTasks = assignedTasks;
+    }
+
+    public String getRole() {
+        return role;
     }
 
     @Override
@@ -22,4 +27,5 @@ public class User extends Id_er {
     public int hashCode() {
         return Objects.hash(role, assignedTasks, id);
     }
+
 }

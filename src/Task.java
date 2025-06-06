@@ -12,7 +12,6 @@ public class Task extends Id_er {
     private List<Comment> comments = new ArrayList<>();
     private User assigneduser;
     private LocalDateTime deadline;
-    private FileAttachment file; //TODO: implement file tracking
 
     public void setTitle(String title) {
         this.title = title;
@@ -54,7 +53,9 @@ public class Task extends Id_er {
         this.comments = comments;
     }
 
-    public User getAssigneduser() {return assigneduser;}
+    public User getAssigneduser() {
+        return assigneduser;
+    }
 
     public LocalDateTime getDeadline() {
         return deadline;
